@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.springbootdemo.dao.UserMapper" >
+
+
+    <select id="selectUserByName"  resultType="User">
+        SELECT * FROM demo WHERE name = #{name}
+    </select>
+
+    <select id="selectUserByAge"  resultType="User">
+        SELECT * FROM demo WHERE age = #{age}
+    </select>
+
+</mapper>
